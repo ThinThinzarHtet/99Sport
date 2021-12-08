@@ -1,0 +1,149 @@
+/* --------- Basic Setup --------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #f8f4f4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* --------- Reusable Components --------- */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* --------- Heading --------- */
+h1 {
+    font-weight: 700;
+    font-size: 240%;
+    color: #cacacafb;
+}
+
+/* --------- Button Section --------- */
+.btn {
+    border: 1px solid transparent;
+    background-color: #18d26e;
+    color: #f8f4f4;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 80%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #17b57d;
+}
+
+
+
+/* --------- Header Section --------- */
+header {
+    background-image: url(img/header-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+.main-logo {
+    float: left;
+    margin-top: 20px;
+    color: #f8f4f4;
+    font-weight: 700;
+    font-size: 150%;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+.main-nav {
+    float: right;
+    margin-top: 20px;
+}
+
+.main-nav li {
+    position: relative;
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.main-nav li a {
+    transition: color 0.5s;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #888585;
+    font-weight: 600;
+    font-size: 80%;
+    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active,
+.main-nav li a:focus {
+    color: #f8f4f4;
+}
+
+.main-nav li a::before {
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #18d26e;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.main-nav li a:hover::before,
+.main-nav li a:focus::before {
+    width: 23px;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.hero-wrapper {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.hero-text-box p {
+    font-size: 120%;
+    font-weight: 400;
+    line-height: 200%;
+    color: #bbbaba;
+}
+
+.hero-btn-box {
+    margin-top: 50px;
+}
