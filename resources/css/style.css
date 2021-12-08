@@ -30,12 +30,46 @@ li {
     margin: 0 auto;
 }
 
+section {
+    padding: 80px 0;
+}
+
+
+
 
 /* --------- Heading --------- */
 h1 {
     font-weight: 700;
     font-size: 240%;
     color: #cacacafb;
+}
+
+.line {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+h3 {
+    color: #888585;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 80%;
+    letter-spacing: 2px;
+}
+
+h3::after {
+    content: '';
+    background-color: #18d26e;
+    height: 1px;
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 9%;
+}
+
+h2 {
+    color: #000;
+    font-size: 180%;
 }
 
 /* --------- Button Section --------- */
@@ -147,3 +181,99 @@ nav {
 .hero-btn-box {
     margin-top: 50px;
 }
+
+/* --------- Features Section --------- */
+#features p {
+    color: #000;
+    font-weight: bold;
+    font-size: 90%;
+    display: inline-block;
+}
+
+#features i{
+    font-size: 150%;
+   margin-right: 12px;
+}
+
+.yellow {
+    color: #f7a611;
+}
+
+.blue {
+    color: #6868e2;
+}
+
+.red {
+    color: rgb(179, 17, 79);
+}
+
+.purple {
+    color: #b864b8;
+}
+
+.pale-blue {
+    color: #1ecece;
+}
+.orange {
+    color: #f1a239;
+}
+.green {
+    color: #0fdee6;
+}
+.dark-blue {
+    color: #37379e;
+}
+
+.feature-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f0f0;
+    transition: all 1.5s;
+    
+}
+
+.feature-wrapper:hover {
+    background-color: #d4cece;
+}
+
+
+/* --------- Members Section --------- */
+.member-section {
+    background-color: #f5f0f0;
+}
+
+.member-wrapper {
+    
+    padding: 40px 20px 20px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+
+.number {
+    color:#000 ;
+    font-weight: 600;
+    font-size: 200%;
+    letter-spacing: 1px;
+}
+
+.club-name {
+    color: #000;
+    font-size: 80%;
+    letter-spacing: 1px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #18d26e;
+    border-radius: 50%;
+    position: absolute;
+    top: -25%;
+    left: 40%;
+}
+
